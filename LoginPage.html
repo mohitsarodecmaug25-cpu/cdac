@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+             font-family:'Trebuchet MS';
+             background: linear-gradient(to right, #EA80FC, #4DD0E1);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+           }
+        .login-container{
+            background-color: whitesmoke;
+            padding:40px;
+            box-shadow:0 0 15px ;
+            width:300px
+        }
+        h2{
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label{
+            display:block;
+            margin-top:10px;
+            color: #333;
+            font-weight:bold;
+        }
+        input[type="text"],
+              input[type="password"]{
+            width:100%;
+            padding:10px;
+            margin-top: 5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            display:block;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin: 10px 0 20px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00897B;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        button:hover {
+             background-color: #d0811a;
+        }    
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="enter username">
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="enter password">
+            <div class="options">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+            
+            
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

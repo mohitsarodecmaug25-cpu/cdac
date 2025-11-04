@@ -1,0 +1,197 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #2979FF;
+  color: #fff;
+  background-image: url("C:\Users\MOHIT\Downloads\Lamborghini Video.mp4");
+}
+
+
+nav {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+nav .logo img {
+  width: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #fdd835;
+  color: #000;
+}
+
+
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  background: #111;
+  top: 40px;
+  left: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li {
+  width: 150px;
+  text-align: left;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+header {
+  background: url("https://wallpapers.com/images/hd/lamborghini-huracan-4k-7d5k5um4a5g1okwv.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  color: #fdd835;
+  text-shadow: 2px 2px 10px #000;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.scrolling-text {
+  background: #fdd835;
+  color: #000;
+  padding: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: 0 0 10px #fdd835;
+  margin-top: 60px;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  animation: scrollText 12s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #fdd835;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #fdd835;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fdd835;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
